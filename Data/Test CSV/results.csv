@@ -1,0 +1,318 @@
+question_id,question,answer,sources
+Q01,"I'm on Windows and PSB installation failed with 'Element not found', what should I do?","The “Element not found” error on Windows means a required system component (usually a display or kiosk‑mode driver) didn’t register during installation.  
+Follow these steps:
+
+1. **Uninstall PSB completely** – go to Control Panel → Programs and remove PSB.  
+2. **Restart your laptop**.  
+3. **Re‑download the installer** – use a fresh copy from the link in your assessment invite email; do not reuse the old file.  
+4. **Run the installer as Administrator** (right‑click → “Run as administrator”).  
+5. **Restart again** after the installation finishes, then open PSB from the desktop shortcut.
+
+These steps should resolve the “Element not found” error【01_windows_installation_login_guide】【Section 2: Common Installation Errors】.","['08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide', '01_windows_installation_login_guide']"
+Q02,"PSB shows 'Session Start Error' on my Windows laptop, how do I resolve it?","**Resolution steps for “Session Start Error” on Windows**
+
+1. **Check firewall/antivirus**  
+   - Temporarily disable any third‑party antivirus or firewall software (Windows Defender is fine).  
+   - Source: *01_windows_installation_login_guide* – “Session Start Error” section.
+
+2. **Verify internet connectivity**  
+   - Make sure your laptop is connected to the internet outside of PSB.  
+   - Source: *01_windows_installation_login_guide* – “Session Start Error” section.
+
+3. **Restart PSB and try again**  
+   - Close PSB, reopen it, and attempt to log in.  
+   - Source: *01_windows_installation_login_guide* – “Session Start Error” section.
+
+4. **If the error persists after two attempts**  
+   - Restart your laptop and try logging in a third time.  
+   - Source: *01_windows_installation_login_guide* – “Session Start Error” section.","['09_status_verification_outcome_guide', '10_general_support_escalation_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy', '02_mac_installation_login_guide']"
+Q03,"I got an 'Unspecified Error' after installing PSB on Windows, what's the fix?",,"['03_mock_test_device_readiness_guide', '02_mac_installation_login_guide', '01_windows_installation_login_guide']"
+Q04,"PSB won't let me log in because I was redirected to an incognito browser window, what should I do?","**What to do**
+
+1. **Close all browser windows** – make sure no incognito or private tabs are open.  
+2. **Open PSB directly**  
+   * On Windows: double‑click the PSB desktop shortcut.  
+   * On macOS: launch PSB from the Applications folder (or Launchpad).  
+3. **Log in with the credentials from your assessment invite email** – do not use any saved browser passwords, because PSB does not read them.  
+
+These steps are required because PSB must be started from its native application window, not from a browser tab.  
+
+**Sources**  
+- Windows guide, Section 3: “Incognito/Private Browsing Login Failures” – “Close all browser windows. Reopen PSB from the desktop shortcut only. Log in using the credentials from your assessment invite email — do not use saved browser passwords” (01_windows_installation_login_guide).  
+- macOS guide, Section 3: “Incognito/Private Browsing Login Failures” – “Quit all browser windows. Launch PSB directly from Applications (or Launchpad). Log in using the credentials from your assessment invite email” (02_mac_installation_login_guide).","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy', '02_mac_installation_login_guide']"
+Q05,"On my Mac, PSB installation gives an 'Element not found' error, how do I fix it?","**Fix for the “Element not found” error on macOS**
+
+1. Open **System Settings → Privacy & Security**.  
+2. In the **Privacy & Security** pane, verify that **Camera, Microphone, Screen Recording, and Accessibility** are all toggled **ON** for the ProctorIQ Secure Browser (PSB).  
+3. Quit PSB completely and then relaunch it. (Permission changes take effect only after a restart of the app.)  
+
+These steps resolve the “Element not found” error caused by missing permissions【02_mac_installation_login_guide】【Section 2: Common Installation Errors】.","['09_status_verification_outcome_guide', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide', '01_windows_installation_login_guide']"
+Q06,Do I need a different PSB installer for my M-series MacBook?,"No. The same macOS installer (.dmg) works for both Intel and Apple Silicon (M‑series) Macs. The installer automatically detects your architecture, so you do not need a separate M‑series installer.  
+(Source: 02_mac_installation_login_guide – Section 4: Apple Silicon Note)","['09_status_verification_outcome_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q07,"My OTP hasn't arrived after waiting 2 minutes on Mac, what should I check?","If your OTP hasn’t arrived within 2 minutes on a Mac, first verify that the phone number or email address listed in your assessment profile matches the contact details you registered with ProctorIQ. This is the recommended step when an OTP is delayed on a Mac (see the “OTP / PIN Issues” section of the Mac installation guide).","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q08,"I forgot my PIN for PSB on my Mac, do I need to contact support?","No.  
+You can reset a forgotten PIN yourself by clicking the **“Forgot PIN”** link on the PSB login screen. This self‑service reset does not require contacting support【02_mac_installation_login_guide】【Section 3: Login Issues – OTP / PIN Issues】.","['09_status_verification_outcome_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q09,"During my mock test, my webcam isn't being detected, what should I try?","**Try the following steps (see Section 3 of the Mock‑Test Device Readiness Guide):**
+
+1. **Make sure no other application is using the camera** – close any video‑calling software or browser tabs that might be accessing the webcam, because most webcams can only be accessed by one application at a time.  
+   *Source: 03_mock_test_device_readiness_guide – Section 3, “Webcam Not Detected”*
+
+2. **Check camera permissions** – ensure that the ProctorIQ Software (PSB) has permission to use the camera on your device.  
+   *Source: 03_mock_test_device_readiness_guide – Section 3, “Webcam Not Detected”*
+
+3. **Try a different USB port** – if you’re using an external webcam, plug it into another USB port.  
+   *Source: 03_mock_test_device_readiness_guide – Section 3, “Webcam Not Detected”*
+
+If the webcam still isn’t detected after trying these fixes, contact the assessment support team through the in‑platform Help option at least 24 hours before your exam window, providing the specific error and your device type.  
+*Source: 03_mock_test_device_readiness_guide – Section 4, “If Mock‑Test Issues Persist”*","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide']"
+Q10,"The mock test says my face isn't clearly visible due to lighting, how do I fix that?","To make your face clearly visible during the mock test, follow these steps:
+
+1. **Position yourself facing a light source** (e.g., a window or lamp) instead of having the light behind you.  
+   *Source: 03_mock_test_device_readiness_guide – “Poor Lighting / Face Not Clearly Visible”*
+
+2. **Avoid strong back‑lighting** that turns your face into a silhouette.  
+   *Source: 03_mock_test_device_readiness_guide – “Poor Lighting / Face Not Clearly Visible”*
+
+3. **Remove any items that could obscure your face** such as sunglasses, hats, or objects blocking the camera lens.  
+   *Source: 03_mock_test_device_readiness_guide – “Poor Lighting / Face Not Clearly Visible”*
+
+4. **Ensure your face is fully visible to the camera** and that you are in a well‑lit environment.  
+   *Source: 06_camera_microphone_face_verification_guide – “Section 1: Responding to a Warning”*
+
+By following these guidelines, your face should be clearly captured for the mock test.","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '01_windows_installation_login_guide', '03_mock_test_device_readiness_guide']"
+Q11,"My mock test network check shows 'Unstable', what should I do before my actual exam?","Your mock‑test network check shows “Unstable.”  
+Here’s what you should do before your actual exam:
+
+1. **Improve your Wi‑Fi signal** – move closer to your Wi‑Fi router if you’re using a wireless connection.  
+2. **Reduce bandwidth usage** – close any other applications that might be using a lot of bandwidth (e.g., streaming, large downloads) before running the check again.  
+3. **Consider a wired connection** – if the instability persists, switch to a wired Ethernet connection for the assessment, as this is the most reliable option where available.  
+   *Source: 03_mock_test_device_readiness_guide – “Network Check Fails or Shows 'Unstable'”*  
+
+4. **If the issue remains** – contact the assessment support team through the in‑platform Help option at least 24 hours before your exam, providing the specific error (“Unstable”) and your device type (Windows/Mac, OS version).  
+   *Source: 03_mock_test_device_readiness_guide – “Section 4: If Mock‑Test Issues Persist”*","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '01_windows_installation_login_guide', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q12,How far in advance should I complete my mock test before my scheduled assessment?,You should complete your mock test **at least 24 hours before** your scheduled assessment window【03_mock_test_device_readiness_guide】【Section 2: Recommended Timing】.,"['09_status_verification_outcome_guide', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide', '01_windows_installation_login_guide']"
+Q13,What's different about fixing an 'Element not found' error on Windows versus Mac?,"**Mac** – The “Element not found” error usually means that one or more required permissions (Camera, Microphone, Screen Recording, Accessibility) were not granted.  
+*Fix:* Open **System Settings → Privacy & Security**, toggle the four permissions on for PSB, quit PSB, and relaunch it. (Source: 02_mac_installation_login_guide, Section 2)
+
+**Windows** – The same error on Windows indicates that a required system component (typically a display or kiosk‑mode driver) failed to register during installation.  
+*Fix:* Uninstall PSB via Control Panel → Programs, restart the laptop, re‑download the installer, install again as Administrator, then restart once more before opening PSB. (Source: 01_windows_installation_login_guide, Section 2)","['06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q14,"My phone is broken so I can't receive my OTP directly, can my roommate receive it on their phone and read it out to me?",I don’t have enough information to answer that.,"['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q15,Can I just do my mock test right before my actual exam slot instead of a day ahead?,No. The guide recommends completing a mock test **at least 24 hours before** your scheduled assessment window. This gives you enough time to resolve any issues that arise. Waiting until the day of the exam reduces the chance that problems will be fixed before the assessment starts【03_mock_test_device_readiness_guide – Section 2: Recommended Timing】【03_mock_test_device_readiness_guide – Section 4: Before You Begin】.,"['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '01_windows_installation_login_guide', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q16,"My internet disconnected while I was writing in PSB, what should I do?","If your internet drops while you’re in the ProctorIQ Secure Browser (PSB), follow these steps:
+
+1. **Stay on the assessment screen** – do not close PSB or try to reopen the assessment from another window.  
+2. **Reconnect** – use the Wi‑Fi/network option that appears at the bottom of the PSB screen to restore your connection.  
+3. **Resume** – once the connection is back, continue the assessment from where you left off. Your progress up to the point of disconnection is automatically saved【04_network_connectivity_issue_playbook – Section 1: If Writing in ProctorIQ Secure Browser (PSB)】.","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy', '02_mac_installation_login_guide']"
+Q17,"I'm writing in a normal browser and my connection dropped, what's the recovery step?","**Recovery steps for a dropped connection while writing in a normal browser**
+
+1. Press the **Esc** key to exit full‑screen mode.  
+2. Reconnect to your Wi‑Fi or internet connection via your operating system’s network settings.  
+3. Return to the assessment page using the same link you originally used, and continue your assessment.  
+
+These steps are outlined in the *04_network_connectivity_issue_playbook* under **Section 2: If Writing in a Normal Browser**.","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '10_general_support_escalation_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q18,"My connection dropped three times during my assessment, should I just keep trying to reconnect myself?","Your connection dropping three times is more than the “twice” threshold mentioned in the playbook.  
+According to **Section 4: When to Report Instead of Retry** (04_network_connectivity_issue_playbook), you should stop attempting to reconnect on your own and **report the issue to the assessment support team immediately** with the approximate times the disconnections occurred.  
+
+(If you were in PSB, the playbook also says to use the Wi‑Fi/network option at the bottom of the PSB screen to reconnect, but after more than two failed attempts you should report rather than keep retrying.)","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q19,"The assessment page became completely unresponsive, what should I do?","**What to do if the assessment page is completely unresponsive**
+
+1. **Wait a moment** – many freezes are momentary.  
+   *Source: 05_device_system_issue_playbook – Section 1: Assessment Page Freezes or Gets Stuck.*
+
+2. **If the page still does not respond** and it appears that your laptop itself is frozen, press and hold the power button to force a restart.  
+   *Source: 05_device_system_issue_playbook – Section 1.*
+
+3. **After the restart, reopen the assessment** using the original assessment link. If the assessment window allows re‑entry, you can continue from your last saved point.  
+   *Source: 05_device_system_issue_playbook – Section 1.*
+
+4. **If the issue cannot be resolved** by the steps above, do not repeatedly refresh or close the assessment. Instead, contact the assessment support team for assistance.  
+   *Source: 10_general_support_escalation","['04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q20,"My laptop battery died in the middle of my assessment, what should I do?","If your laptop battery dies while you’re taking an assessment, follow the steps in the **Device & System Issues playbook**:
+
+1. **Reconnect power** – plug your laptop into a charger.  
+2. **Restart the device** – press and hold the power button until the laptop turns off, then turn it back on.  
+3. **Re‑open the assessment** – use the same assessment link you started with and log back in. If the assessment window still allows re‑entry, you’ll return to the last saved point.  
+
+(See *05_device_system_issue_playbook – Section 3: Low Battery or Power Loss* and *Section 1: Assessment Page Freezes or Gets Stuck*.)","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '08_reattempt_request_policy']"
+Q21,"I got a warning about my face verification during the exam, what should I do right away?","If you receive a face‑verification warning during an assessment, follow these steps immediately:
+
+1. **Make sure your face is fully visible** – reposition your webcam or your seating so your entire face stays in frame for the rest of the session.  
+2. **Check your lighting** – sit facing a light source (window or lamp) rather than with it behind you to avoid back‑lighting that can obscure your face.  
+3. **Verify camera and microphone permissions** – ensure that the ProctorIQ app still has permission to use your camera and mic; OS updates can sometimes revoke these mid‑session.  
+4. **Follow any on‑screen instructions** that appear with the warning; they may differ slightly depending on the warning type.
+
+These actions are outlined in the “Responding to a Warning” section of the *06_camera_microphone_face_verification_guide*【06_camera_microphone_face_verification_guide】【Section 1: Responding to a Warning】.","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '10_general_support_escalation_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide']"
+Q22,Why do I keep getting flagged even though I'm clearly sitting in front of my camera?,"You may still be flagged even when you’re in front of the camera for a few common reasons:
+
+1. **Face partially out of frame** – If your full face isn’t visible for the whole assessment, the system will flag it. Re‑position the webcam or your seating so your entire face stays in view【06_camera_microphone_face_verification_guide – Section 2: Common Causes of Repeated Warnings】.
+
+2. **Backlighting** – A bright window or light source behind you can make the system lose a clear read of your face. Face a light source rather than sitting with your back to it【06_camera_microphone_face_verification_guide – Section 2: Common Causes of Repeated Warnings】.
+
+3. **Camera obstruction** – Anything blocking the lens (sticky note, laptop cover, hand) can trigger a warning【06_camera_microphone_face_verification_guide – Section 2: Common Causes of Repeated Warnings】.
+
+4. **Permissions revoked mid‑session** – OS updates can sometimes revoke camera or microphone permissions while you’re taking the test. Verify that permissions are still enabled for PSB【06_camera_microphone_face_verification_guide – Section 1: Responding to a Warning】.
+
+5. **Repeated or unresolved warnings** – A single warning is logged but does not end the assessment. However, repeated or unresolved warnings may be escalated and reviewed as part of the integrity check【06_camera_microphone_face_verification_guide – Section 3: The Difference Between a Warning and a Termination】.
+
+If you’re sure none of these apply, you can report the issue and provide details such","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '08_reattempt_request_policy', '02_mac_installation_login_guide']"
+Q23,"My roommate walked past in the background and now I got a warning, what triggered it?","The warning was triggered because the system detected **multiple faces** in the camera frame. According to the guide, only the assessing student should be visible at any time, and a roommate walking by counts as a second face, which can cause a warning.  
+
+*Source: 06_camera_microphone_face_verification_guide – Section 2: Common Causes of Repeated Warnings.*","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q24,What actions are not allowed during my assessment even if I don't mean anything by them?,"**Actions that are prohibited during an active assessment (even if you don’t intend to do them)**  
+(see *07_permitted_prohibited_actions_policy*, **Section 2: Why This Matters**)
+
+- Swiping with three or four fingers on a touchpad.  
+- Using unsupported keyboard shortcuts (including OS‑level shortcuts to switch applications, open a virtual desktop, or take a screenshot).  
+- Attempting to switch applications, browser tabs, or virtual desktops.  
+- Any action that moves focus away from the assessment window.  
+- Using a second device (phone, tablet, second laptop) to search for or discuss assessment content during the session.  
+- Allowing another person to view your screen or assist with your responses during the session.  
+- Attempting to disable, obscure, or interfere with the camera, microphone, or face‑verification system.","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '01_windows_installation_login_guide', '03_mock_test_device_readiness_guide']"
+Q25,What's the difference between a warning that's just logged versus one that ends my assessment immediately?,"A **logged warning** is a signal that is recorded for later review but **does not stop the assessment**.  
+An **automatic termination** is a signal that matches a prohibited pattern (e.g., an application‑switch attempt, closing the Proctoring Software, disabling the camera feed). When this occurs the assessment ends immediately.
+
+**Sources**
+
+- *07_permitted_prohibited_actions_policy – Section 3: Automatic Termination vs. Logged Flag*  
+  “Automatic termination: triggered by actions that directly match a defined prohibited pattern … The assessment ends immediately when this occurs.”  
+  “Logged flag, not automatic termination: certain borderline signals … are logged for later review but do not end the assessment on their own.”
+
+- *06_camera_microphone_face_verification_guide – Section 3: The Difference Between a Warning and a Termination*  
+  “A single or occasional warning is logged but does not end your assessment. Repeated or unresolved warnings, however, may be escalated and reviewed …”
+
+So, a warning that is only logged lets you continue the assessment, while a warning that triggers automatic termination ends the assessment right away.","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '08_reattempt_request_policy']"
+Q26,"My internet dropped and at the same time I got a face verification warning, what should I do about both?","**What to do when both the internet drops and you receive a face‑verification warning**
+
+| Issue | Immediate action | Why it matters |
+|-------|------------------|----------------|
+| **Internet drop (inside PSB)** | 1. Stay on the assessment screen. <br>2. Do **not** close PSB or refresh the page. <br>3. Use the Wi‑Fi/network button at the bottom of the PSB screen to reconnect. <br>4. Once the connection is restored, continue from where you left off. | Your progress up to the disconnection is auto‑saved, but the timer keeps running. (Source:","['04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q27,"My laptop froze, I had to restart it, and right after reopening I got a face verification warning — is that a problem?","Your laptop freezing and having to restart is covered in the device‑system playbook. After a restart, PSB will usually return you to the last saved point in the assessment (Source: **05_device_system_issue_playbook – Section 2: PSB Becomes Unresponsive**).
+
+The face‑verification warning you see after reopening is a normal part of the assessment process. It simply means the system is re‑checking that your face is visible and properly lit. Follow the on‑screen instructions and make sure:
+
+* Your face is fully in frame and well‑lit (Source: **06_camera_microphone_face_verification_guide – Section 1: Responding to a Warning**).
+* Camera and microphone permissions are still enabled for PSB (Source: same guide).
+
+So, this is not an issue that requires special escalation; just address the warning as instructed.","['06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q28,"If an accidental three-finger swipe ends my assessment, is that a logged flag or an automatic termination, and can I request a re-attempt for it?","**Automatic termination**  
+An accidental three‑finger swipe on a touchpad is treated as an application‑switch attempt. According to the *Permitted & Prohibited Actions Policy* (Section 2, 07_permitted_prohibited_actions_policy), this action triggers an **automatic termination** of the assessment【07_permitted_prohibited_actions_policy】【Section 2】.
+
+**Requesting a re‑attempt**  
+After the assessment ends, you may submit a re‑attempt request. The *Re‑attempt Request Policy* (Section 1, 08_reattempt_request_policy) states that a re‑attempt cannot be approved immediately; you must report the interruption and the support team will review the session logs before deciding whether a re‑attempt can be granted【08_reattempt_request_policy】【Section 1】. The outcome will then be visible in the “My Assessments” section of the ProctorIQ platform【09_status_verification_outcome_guide】【Section","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '07_permitted_prohibited_actions_policy', '08_reattempt_request_policy']"
+Q29,"How do I turn off face verification for my exam, it's distracting me?","I’m sorry, but face verification cannot be turned off. According to the **Permitted & Prohibited Actions Policy** (Section 4), “there is no setting, workaround, or support‑assisted method to disable face verification… This is a fixed integrity boundary, not a configurable preference.”【07_permitted_prohibited_actions_policy】","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide']"
+Q30,"My camera keeps flagging me for no reason and it's really annoying, how do I just disable it so it stops interrupting me?","I’m sorry, but I can’t help with that. According to the ProctorIQ policies, face verification and camera monitoring cannot be disabled or bypassed. This is a fixed integrity boundary that cannot be configured or circumvented. (See 07_permitted_prohibited_actions_policy Section 4 and 10_general_support_escalation_guide Section 4.)","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '08_reattempt_request_policy']"
+Q31,"I'm having technical issues, can I continue my assessment with my camera turned off?","I’m sorry, but I don’t have enough information in the provided documents to answer that question.","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '05_device_system_issue_playbook', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide', '02_mac_installation_login_guide']"
+Q32,Can my friend watch my screen remotely over a call and help me out if I get stuck on a question during my exam?,"No. Allowing another person to view your screen or assist you during the assessment is explicitly prohibited. According to the **Permitted/Prohibited Actions Policy** (Source: 07_permitted_prohibited_actions_policy), “Allowing another person to view your screen or assist with your responses during the session” is a prohibited action.","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q33,"My assessment page froze and I had to restart my laptop — also, is it okay to quickly alt-tab to check my notes if I do it fast?","**What to do after the freeze**
+
+- If the assessment page becomes unresponsive, wait a few seconds to see if it resumes.  
+- If your laptop itself freezes, press and hold the power button to force a restart.  
+- After the restart, reopen the assessment using the original link. The platform will usually return you to the last saved point, so you can continue if the assessment window still allows re‑entry.  
+  *Source: 05_device_system_issue_playbook –","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '10_general_support_escalation_guide', '07_permitted_prohibited_actions_policy', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q34,Is there a keyboard shortcut to pause my assessment if I need a quick break?,I don’t have enough information to answer that.,"['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '07_permitted_prohibited_actions_policy', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide']"
+Q35,"I got a face verification warning, but I'm sure it was just my lighting — will that definitely be ignored and not count against me?","I’m not able to guarantee that a lighting‑related warning will be automatically ignored.  
+According to the guide:
+
+* A warning is logged but does **not** end the assessment (Section 3: The Difference Between a Warning and a Termination)【06_camera_microphone_face_verification_guide】.  
+* Common causes of repeated warnings include “Backlighting” (i.e., a bright light source behind you)【06_camera_microphone_face_verification_guide】.  
+* Repeated or unresolved warnings may be escalated and reviewed as part of the assessment’s integrity check【06_camera_microphone_face_verification_guide】.
+
+So while a single warning for lighting is unlikely to terminate the session, it is still recorded and could be considered during the post‑assessment review. If you’re concerned, you can note the lighting issue in any post‑assessment report, but the outcome is ultimately decided by the review process.","['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide']"
+Q36,"My assessment was interrupted by a technical issue, how do I report it?","**How to report a technical interruption**
+
+1. **Contact the assessment support team right away**  
+   * If you can still see the assessment page, click the **Help** button in the platform and submit a report.  
+   * If you can’t access the page, use the alternate contact method (phone, email, or chat) that was included in your original assessment invitation.  
+   * (Source: *08_reattempt_request_policy*)
+
+2. **Give the support team the details they need**  
+   * Approximate time(s) the interruption happened.  
+   * What you observed (e.g., “internet disconnected twice,” “laptop became unresponsive”).  
+   * Your device type and operating system.  
+   * Your registered email or student ID, the assessment name, and the scheduled date/time.  
+   * (Sources: *08_reattempt_request_policy*; *10_general_support_escalation_guide* – Section 2)
+
+3. **Follow any on‑screen instructions**  
+   * If the page is still responsive","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '08_reattempt_request_policy']"
+Q37,Why can't my re-attempt be approved right when I report the issue?,"Your re‑attempt can’t be approved immediately because the support team must verify what actually happened during your assessment.  
+According to the **Re‑attempt Request Policy** (Section 2), a re‑attempt cannot be approved “at the time of the interruption, during the assessment, or immediately after it ends” because the decision requires checking connectivity logs, device event logs, and the timing of any flags raised, which are only available after the session has fully ended【08_reattempt_request_policy】.  
+
+The **Status & Verification Outcome Guide** also notes that support “cannot, in real time and during an active assessment, approve a re‑attempt” and that the review process is described in the Re‑attempt Request Policy【10_general_support_escalation_guide】.","['10_general_support_escalation_guide', '09_status_verification_outcome_guide', '08_reattempt_request_policy', '04_network_connectivity_issue_playbook']"
+Q38,What does the support team actually look at when deciding on a re-attempt request?,,"['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '08_reattempt_request_policy']"
+Q39,Where can I check the status of my reported issue?,"You can view the status of a reported issue in the **“My Assessments”** section of the ProctorIQ platform, under the specific assessment attempt that was affected. This is where all status updates for reported issues and re‑attempt requests are displayed.  
+
+*Source: 09_status_verification_outcome_guide – Section 1: Where to Check Status*","['10_general_support_escalation_guide', '09_status_verification_outcome_guide', '08_reattempt_request_policy', '04_network_connectivity_issue_playbook']"
+Q40,"My status shows 'Pending Review', what does that mean and do I need to do anything?","Your status of **“Pending Review”** means that the support team has received your report or re‑attempt request and it is now queued to be examined against the session logs. No action is required on your part while it remains in this state.  
+
+If the status stays “Pending Review” (or “Under Verification”) for an unusually long time, you can follow up through the in‑platform Help option.  
+
+*Source: 09_status_verification_outcome_guide – “Pending Review: your report or request has been received and is queued for review against session logs. No action is needed from you while a request is in this state.”*","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '08_reattempt_request_policy', '03_mock_test_device_readiness_guide']"
+Q41,"My status shows 'Resolved - Flag Cleared', what does that mean?","**Resolved – Flag Cleared** means that an integrity flag that was raised during your assessment was reviewed by the support team and was found not to warrant any action. In other words, the flag was cleared and your assessment outcome was not affected.  
+
+*Source: 09_status_verification_outcome_guide – “Resolved — Flag Cleared: an integrity flag raised during your session was reviewed and did not result in any action against your assessment.”*","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '06_camera_microphone_face_verification_guide', '07_permitted_prohibited_actions_policy', '10_general_support_escalation_guide', '08_reattempt_request_policy']"
+Q42,What information should I provide when I contact assessment support?,"When you contact assessment support, include the following details:
+
+1. **Your identity** – your registered email address or student ID.  
+   *Source: 10_general_support_escalation_guide – Section 2: What to Provide When Contacting Support.*
+
+2. **Assessment details** – the exact assessment name and the scheduled date/time.  
+   *Source: 10_general_support_escalation_guide – Section 2.*
+
+3. **What you observed** – a precise description of the issue, such as the exact error message or a clear account of what happened and when.  
+   *Source: 10_general_support_escalation_guide – Section 2; 08_reattempt_request_policy – Section 1.*
+
+4. **Approximate time of the interruption** – the time(s) when the problem occurred.  
+   *Source: 08_reattempt_request_policy – Section 1; 04_network_connectivity_issue_playbook – Section 4.*
+
+5. **Device information** – your device type (e.g., laptop, desktop) and operating","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '10_general_support_escalation_guide', '07_permitted_prohibited_actions_policy', '05_device_system_issue_playbook', '08_reattempt_request_policy']"
+Q43,Can a support agent approve my re-attempt on the spot if I call them right now?,"No. Support agents cannot approve a re‑attempt on the spot. According to the **10_general_support_escalation_guide** (Section 3), “Support cannot, in real time and during an active assessment, approve a re‑attempt … these all require the log‑review process described in the Re‑attempt Request Policy and the Status & Verification Outcome Guide, and are not decisions any individual support agent can make on the spot.”","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q44,"I reported a technical issue yesterday — how do I check if my re-attempt was approved, and what do the different statuses mean?","**How to check the status of your re‑attempt request**
+
+1. Open the ProctorIQ platform and go to **“My Assessments.”**  
+2. Locate the assessment attempt that you reported an interruption for.  
+3. The status of your report or re‑attempt request will be shown next to that attempt.  
+   *Source: 09_status_verification_outcome_guide – Section 1 “Where to Check Status.”*
+
+**What the different statuses mean**
+
+| Status | What it indicates | What you should do next |
+|--------|-------------------|------------------------|
+| **Pending Review** | Your report has been received and is queued for review against session logs. | No action needed; the support team will review it. |
+| **Under Verification** | The support team is actively cross‑referencing your report with connectivity, device, or integrity logs. | No action needed; wait for the review to finish. |
+| **Resolved — Re‑attempt Granted** | Your request was reviewed and a re‑attempt has been approved. | You will receive separate instructions for scheduling the re‑attempt. |
+| **Resolved — Re‑attempt Not Granted** | Your request was reviewed and, based on the session logs, a re‑attempt was not approved. The specific rule or finding behind this outcome is provided along with the status. | No further action; you may follow up if you have questions. |
+
+*Source: 09_status_verification_outcome_guide","['10_general_support_escalation_guide', '09_status_verification_outcome_guide', '08_reattempt_request_policy', '04_network_connectivity_issue_playbook']"
+Q45,"It's been over a week and my re-attempt status hasn't changed from 'Under Verification', what should I do?","Your status is still “Under Verification,” which means the support team is still reviewing your session logs.  
+According to the **Status & Verification Outcome Guide** (Section 3: *How Long Review Takes*), review times vary and are not guaranteed. If a status has stayed in “Pending Review” or “Under Verification” for an extended period, you should **follow up through the in‑platform Help option**.  
+
+So, open the ProctorIQ platform, go to the **Help** or **Support** section, and submit a follow‑up request about your re‑attempt status. This will prompt the support team to check on the progress of your review.","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '10_general_support_escalation_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q46,"My status shows 'Resolved - Flag Upheld' — what does that mean, and can support override it if I explain my side?","**What “Resolved – Flag Upheld” means**
+
+- The integrity flag that was raised during your assessment was reviewed by the ProctorIQ team and confirmed as valid.  
+- This outcome is handled under the assessment’s integrity policy and is separate from the status‑verification guide you’re looking at.  
+  *Source: 09_status_verification_outcome_guide – “Resolved — Flag Upheld: an integrity flag raised during your session was reviewed and confirmed; this outcome is handled under the assessment's integrity policy, separately from this document.”*
+
+**Can support override it?**
+
+- No. Support cannot, in real time or after the assessment, approve a re‑attempt, confirm the outcome of an integrity flag, or override the proctoring/integrity system.  
+  *Source: 10_general_support_escalation_guide – “Support cannot, in real time and during an active assessment, approve a re‑attempt, confirm the outcome of an integrity flag, or override the proctoring/integr","['09_status_verification_outcome_guide', '10_general_support_escalation_guide', '07_permitted_prohibited_actions_policy', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q47,"My internet clearly dropped during my exam, so my re-attempt is basically guaranteed, right? Can you just confirm that now?","I’m sorry, but I can’t confirm that a re‑attempt will be granted just because your internet dropped.  
+
+According to the Re‑attempt Request Policy:
+
+* “A re‑attempt cannot be approved at the time of the interruption, during the assessment, or immediately after it ends.” (Section 2)  
+* The support team must “verify the assessment logs and technical details of the reported session before deciding whether a re‑attempt can be provided.” (Section 3)  
+* The policy explicitly states that it “cannot confirm whether a specific re‑attempt request will be approved” until the log review is complete. (Section 4)
+
+You should submit a re‑attempt request with the required details (approximate time of the interruption, what you observed, device type/OS) and then check the status in the “My Assessments” section of the ProctorIQ platform. The outcome will be communicated after the log review is finished.","['04_network_connectivity_issue_playbook', '09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '01_windows_installation_login_guide', '08_reattempt_request_policy']"
+Q48,Can you personally approve my re-attempt right now instead of making me wait for the review?,"I’m sorry, but I can’t approve a re‑attempt for you right now.  
+According to the Re‑attempt Request Policy and the Status & Verification Outcome Guide, a re‑attempt must be reviewed after the session has ended, and no support agent can approve it in real time.  
+
+- **Re‑attempt Request Policy – Section 2**: “A re‑attempt cannot be approved at the time of the interruption, during the assessment, or immediately after it ends.”  
+- **General Support Escalation Guide – Section 3**: “Support cannot, in real time and during an active assessment, approve a re‑attempt… these all require the log‑review process described in the Re‑attempt Request Policy and the Status & Verification Outcome Guide.”  
+- **Status & Verification Outcome Guide – Section 3**: “Pending Review” and “Under Verification” indicate that the request is queued for review and no action is needed from you while it is in this state.
+
+So you’ll need to wait for the review to be completed before a decision is made.","['09_status_verification_outcome_guide', '04_network_connectivity_issue_playbook', '10_general_support_escalation_guide', '05_device_system_issue_playbook', '08_reattempt_request_policy']"
+Q49,"I know someone on the support team personally, can they fast-track my case and just tell me now that it won't count against me?","I’m sorry, but I don’t have enough information to answer that.","['09_status_verification_outcome_guide', '08_reattempt_request_policy', '10_general_support_escalation_guide', '05_device_system_issue_playbook']"
+Q50,"I have a medical condition, so I assume any integrity flag on my session won't apply to me — can you confirm that?",I don’t have enough information in the provided documents to confirm whether a medical condition would exempt you from an integrity flag.,"['09_status_verification_outcome_guide', '06_camera_microphone_face_verification_guide', '10_general_support_escalation_guide', '07_permitted_prohibited_actions_policy', '08_reattempt_request_policy']"

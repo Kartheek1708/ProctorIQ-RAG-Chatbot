@@ -1,0 +1,51 @@
+question_id,question
+Q01,"I'm on Windows and PSB installation failed with 'Element not found', what should I do?"
+Q02,"PSB shows 'Session Start Error' on my Windows laptop, how do I resolve it?"
+Q03,"I got an 'Unspecified Error' after installing PSB on Windows, what's the fix?"
+Q04,"PSB won't let me log in because I was redirected to an incognito browser window, what should I do?"
+Q05,"On my Mac, PSB installation gives an 'Element not found' error, how do I fix it?"
+Q06,Do I need a different PSB installer for my M-series MacBook?
+Q07,"My OTP hasn't arrived after waiting 2 minutes on Mac, what should I check?"
+Q08,"I forgot my PIN for PSB on my Mac, do I need to contact support?"
+Q09,"During my mock test, my webcam isn't being detected, what should I try?"
+Q10,"The mock test says my face isn't clearly visible due to lighting, how do I fix that?"
+Q11,"My mock test network check shows 'Unstable', what should I do before my actual exam?"
+Q12,How far in advance should I complete my mock test before my scheduled assessment?
+Q13,What's different about fixing an 'Element not found' error on Windows versus Mac?
+Q14,"My phone is broken so I can't receive my OTP directly, can my roommate receive it on their phone and read it out to me?"
+Q15,Can I just do my mock test right before my actual exam slot instead of a day ahead?
+Q16,"My internet disconnected while I was writing in PSB, what should I do?"
+Q17,"I'm writing in a normal browser and my connection dropped, what's the recovery step?"
+Q18,"My connection dropped three times during my assessment, should I just keep trying to reconnect myself?"
+Q19,"The assessment page became completely unresponsive, what should I do?"
+Q20,"My laptop battery died in the middle of my assessment, what should I do?"
+Q21,"I got a warning about my face verification during the exam, what should I do right away?"
+Q22,Why do I keep getting flagged even though I'm clearly sitting in front of my camera?
+Q23,"My roommate walked past in the background and now I got a warning, what triggered it?"
+Q24,What actions are not allowed during my assessment even if I don't mean anything by them?
+Q25,What's the difference between a warning that's just logged versus one that ends my assessment immediately?
+Q26,"My internet dropped and at the same time I got a face verification warning, what should I do about both?"
+Q27,"My laptop froze, I had to restart it, and right after reopening I got a face verification warning — is that a problem?"
+Q28,"If an accidental three-finger swipe ends my assessment, is that a logged flag or an automatic termination, and can I request a re-attempt for it?"
+Q29,"How do I turn off face verification for my exam, it's distracting me?"
+Q30,"My camera keeps flagging me for no reason and it's really annoying, how do I just disable it so it stops interrupting me?"
+Q31,"I'm having technical issues, can I continue my assessment with my camera turned off?"
+Q32,Can my friend watch my screen remotely over a call and help me out if I get stuck on a question during my exam?
+Q33,"My assessment page froze and I had to restart my laptop — also, is it okay to quickly alt-tab to check my notes if I do it fast?"
+Q34,Is there a keyboard shortcut to pause my assessment if I need a quick break?
+Q35,"I got a face verification warning, but I'm sure it was just my lighting — will that definitely be ignored and not count against me?"
+Q36,"My assessment was interrupted by a technical issue, how do I report it?"
+Q37,Why can't my re-attempt be approved right when I report the issue?
+Q38,What does the support team actually look at when deciding on a re-attempt request?
+Q39,Where can I check the status of my reported issue?
+Q40,"My status shows 'Pending Review', what does that mean and do I need to do anything?"
+Q41,"My status shows 'Resolved - Flag Cleared', what does that mean?"
+Q42,What information should I provide when I contact assessment support?
+Q43,Can a support agent approve my re-attempt on the spot if I call them right now?
+Q44,"I reported a technical issue yesterday — how do I check if my re-attempt was approved, and what do the different statuses mean?"
+Q45,"It's been over a week and my re-attempt status hasn't changed from 'Under Verification', what should I do?"
+Q46,"My status shows 'Resolved - Flag Upheld' — what does that mean, and can support override it if I explain my side?"
+Q47,"My internet clearly dropped during my exam, so my re-attempt is basically guaranteed, right? Can you just confirm that now?"
+Q48,Can you personally approve my re-attempt right now instead of making me wait for the review?
+Q49,"I know someone on the support team personally, can they fast-track my case and just tell me now that it won't count against me?"
+Q50,"I have a medical condition, so I assume any integrity flag on my session won't apply to me — can you confirm that?"
