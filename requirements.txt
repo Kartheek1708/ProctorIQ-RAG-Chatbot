@@ -8,3 +8,4 @@ pandas
 python-dotenv
 rank-bm25
 uvicorn
+fastapi
