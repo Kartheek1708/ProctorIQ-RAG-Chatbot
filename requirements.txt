@@ -9,3 +9,4 @@ python-dotenv
 rank-bm25
 uvicorn
 fastapi
+langchain-huggingface
